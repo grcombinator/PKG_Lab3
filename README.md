@@ -17,10 +17,10 @@
 
 Установите их с помощью pip:
 
+```
 bash
-
-Copy
 pip install Flask opencv-python numpy Pillow
+```
 
 Структура кода
 
