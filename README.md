@@ -1,10 +1,10 @@
 # PKG_Lab3
 
-Описание
+### Описание
 
 Данный код представляет собой веб-приложение на Flask для обработки изображений с использованием библиотеки OpenCV. Приложение позволяет пользователю загружать изображение и применять к нему различные методы обработки, такие как обнаружение точек, линий, градиентов и пороговая обработка.
 
-Установка
+### Установка
 Для работы приложения необходимо установить следующие библиотеки:
 
 1) Flask
@@ -22,25 +22,16 @@ bash
 pip install Flask opencv-python numpy Pillow
 ```
 
-Структура кода
+### Структура кода
 
 Импортируемые библиотеки
-
-python
-
-Run
-
-Copy
-
-import cv2
-
-import numpy as np
-
-from flask import Flask, render_template, request, send_file
-
-from io import BytesIO
-
-from PIL import Image
+```
+cv2
+numpy
+flask
+io
+PIL
+```
 
 cv2: Библиотека для обработки изображений.
 
@@ -67,8 +58,6 @@ app = Flask(__name__)
 Функции обработки изображений
 Обнаружение точек
 python
-
-Run
 
 Copy
 def detect_points(image):
